@@ -3,3 +3,9 @@
 ################################################################################
 
 /Example/Example.API/obj
+/Example/.vs/Example/v16
+/Example/Example.Model/bin/Debug/netstandard2.0
+/Example/Example.API/bin/Debug/netcoreapp3.1
+/Example/Example.Model/obj
+/Example/Example.WebCore/obj
+/Example/Example.WebCore/bin/Debug/netcoreapp3.1
