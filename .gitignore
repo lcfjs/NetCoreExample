@@ -9,3 +9,10 @@
 /Example/Example.Model/obj
 /Example/Example.WebCore/obj
 /Example/Example.WebCore/bin/Debug/netcoreapp3.1
+*.v2
+/Example/.vs/Example/config/applicationhost.config
+/Example/Example.Core/obj/Debug/netstandard2.0
+/Example/Example.Service/obj
+/Example/Example.Service/bin/Debug/netcoreapp3.1
+/Example/Example.Repository/obj
+/Example/Example.Repository/bin/Debug/netcoreapp3.1
