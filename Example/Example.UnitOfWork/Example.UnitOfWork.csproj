@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Example.UnitOfWork\Example.UnitOfWork.csproj" />
+    <ProjectReference Include="..\Example.EntityFramwork\Example.EntityFramwork.csproj" />
   </ItemGroup>
 
 </Project>

@@ -16,3 +16,7 @@
 /Example/Example.Service/bin/Debug/netcoreapp3.1
 /Example/Example.Repository/obj
 /Example/Example.Repository/bin/Debug/netcoreapp3.1
+/Example/Example.UnitOfWork/obj
+/Example/Example.UnitOfWork/bin/Debug/netcoreapp3.1
+/Example/Example.EntityFramwork/obj
+/Example/Example.EntityFramwork/bin/Debug/netcoreapp3.1
