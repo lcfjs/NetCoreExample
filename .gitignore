@@ -20,3 +20,5 @@
 /Example/Example.UnitOfWork/bin/Debug/netcoreapp3.1
 /Example/Example.EntityFramwork/obj
 /Example/Example.EntityFramwork/bin/Debug/netcoreapp3.1
+/Example/Example.ConsoleApp/obj
+/Example/Example.ConsoleApp/bin/Debug/netcoreapp3.1

@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Example.EntityFramwork\Example.EntityFramwork.csproj" />
+    <ProjectReference Include="..\Example.Model\Example.Model.csproj" />
+    <ProjectReference Include="..\Example.WebCore\Example.WebCore.csproj" />
   </ItemGroup>
 
 </Project>
