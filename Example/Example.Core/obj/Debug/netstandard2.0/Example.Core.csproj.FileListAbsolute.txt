@@ -1,9 +1,0 @@
-D:\lichaofeng\git\NetCoreExample\Example\Example.Core\bin\Debug\netstandard2.0\Example.Core.deps.json
-D:\lichaofeng\git\NetCoreExample\Example\Example.Core\bin\Debug\netstandard2.0\Example.Core.dll
-D:\lichaofeng\git\NetCoreExample\Example\Example.Core\bin\Debug\netstandard2.0\Example.Core.pdb
-D:\lichaofeng\git\NetCoreExample\Example\Example.Core\obj\Debug\netstandard2.0\Example.Core.csproj.CoreCompileInputs.cache
-D:\lichaofeng\git\NetCoreExample\Example\Example.Core\obj\Debug\netstandard2.0\Example.Core.AssemblyInfoInputs.cache
-D:\lichaofeng\git\NetCoreExample\Example\Example.Core\obj\Debug\netstandard2.0\Example.Core.AssemblyInfo.cs
-D:\lichaofeng\git\NetCoreExample\Example\Example.Core\obj\Debug\netstandard2.0\Example.Core.dll
-D:\lichaofeng\git\NetCoreExample\Example\Example.Core\obj\Debug\netstandard2.0\Example.Core.pdb
-D:\lichaofeng\git\NetCoreExample\Example\Example.Core\obj\Debug\netstandard2.0\Example.Core.csprojAssemblyReference.cache
