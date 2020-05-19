@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Example.WebCore.Extension
+namespace Example.Core.Extension
 {
     public static class DateTimeExtension
     {

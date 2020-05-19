@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <Folder Include="Attribute\" />
+    <Folder Include="Extension\" />
   </ItemGroup>
 
   <ItemGroup>

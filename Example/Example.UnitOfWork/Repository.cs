@@ -2,7 +2,7 @@
 using Example.Model.Table.Sys;
 using Example.UnitOfWork.Entity;
 using Example.WebCore.BaseModel;
-using Example.WebCore.Extension;
+using Example.Core.Extension;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

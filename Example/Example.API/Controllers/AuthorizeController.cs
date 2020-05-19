@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Example.Model.Dto.User;
 using Example.WebCore.BaseModel;
-using Example.WebCore.Extension;
+using Example.Core.Extension;
 using Example.WebCore.Jwt;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -37,6 +37,12 @@ namespace Example.API.Controllers
             {
                 payload.Add("name", args.Account);
             }
+
+            Core.Log.LoggerTools.GetInstance(Core.Log.LoggerTools.RequestLog).Info("开始："+DateTime.Now);
+            Task.Run(async () => {
+                await Task.Delay(5000);
+                Core.Log.LoggerTools.GetInstance(Core.Log.LoggerTools.RequestLog).Info("结束：" + DateTime.Now);
+            });
 
             var token = JwtTools.GetToken(payload);
 
