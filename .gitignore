@@ -23,3 +23,5 @@
 /Example/Example.ConsoleApp/obj
 /Example/Example.ConsoleApp/bin/Debug/netcoreapp3.1
 /Example/Example.Core/Example.Core.csproj.user
+/Example/Example.Core/bin/Debug/netstandard2.0
+/Example/Example.Core/obj

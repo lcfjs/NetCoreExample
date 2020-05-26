@@ -6,6 +6,11 @@ namespace Example.Core.Extension
 {
     public static class DateTimeExtension
     {
+        public static string Format(this DateTime dateTime, string format = "yyyy-MM-dd HH:mm:ss")
+        {
+            return dateTime.ToString(format);
+        }
+
         /// <summary>
         /// UTC时间戳（秒）
         /// </summary>

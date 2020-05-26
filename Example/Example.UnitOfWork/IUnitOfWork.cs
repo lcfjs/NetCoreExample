@@ -1,6 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Example.UnitOfWork.Entity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -22,11 +24,27 @@ namespace Example.UnitOfWork
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
-        IRepository<T> GetCustomRepository<T>() where T : class;
+        T GetCustomRepository<T>() where T : class;
 
 
         int SaveChanges();
         Task<int> SaveChangesAsync();
+
+        /// <summary>
+        /// 执行SQL
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        int ExecuteSqlCommand(string sql, params object[] parameters);
+
+        /// <summary>
+        /// 执行SQL
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        Task<int> ExecuteSqlCommandAsync(string sql, params object[] parameters);
 
         /// <summary>
         /// 执行SQL语句，TEntity需要在TContext定义属性
@@ -45,5 +63,35 @@ namespace Example.UnitOfWork
         /// <param name="parameters"></param>
         /// <returns></returns>
         List<T> SqlQuery<T>(string sql, params object[] parameters) where T : new();
+
+        /// <summary>
+        /// 执行SQL语句返回分页
+        /// </summary>
+        /// <typeparam name="TElement"></typeparam>
+        /// <param name="sql"></param>
+        /// <param name="pageIndex"></param>
+        /// <param name="pageSize"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        IPageList<T> SqlQuery<T>(string sql, int pageIndex, int pageSize, params object[] parameters) where T : new();
+
+        /// <summary>
+        /// 执行SQL语句
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        DataTable SqlQuery(string sql, params object[] parameters);
+
+        /// <summary>
+        /// 执行SQL语句（分页）
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <param name="pageIndex"></param>
+        /// <param name="pageSize"></param>
+        /// <param name="totalCount"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        DataTable SqlQuery(string sql, int pageIndex, int pageSize, out int totalCount, params object[] parameters);
     }
 }
