@@ -7,6 +7,7 @@ using System.Linq.Expressions;
 using System.Net.Http.Headers;
 using Example.Core.Extension;
 using System.Collections.Generic;
+using Example.Core;
 
 namespace Example.ConsoleApp
 {
@@ -75,6 +76,12 @@ namespace Example.ConsoleApp
              new User{Id=Guid.NewGuid().ToString(),Name="wangwu", Sort=222 },
             };
             var val2 = listUser.ToDataTable();
+
+            var snowflakeId = new SnowflakeId(2, 1);
+            for (int i = 0; i < 1000; i++)
+            {
+                Console.WriteLine(snowflakeId.NextId());
+            }
         }
     }
 
